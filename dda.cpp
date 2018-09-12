@@ -6,7 +6,7 @@ void drawLine(int x1, int y1, int x2, int y2)
 {
 	double m = (y2 - y1) / (double)(x2 - x1);
 
-	if (abs(m) < 1)
+	if (abs(m) > 1)
 		for (int x = x1, y = y1; x < x2; x++, y = floor(y + m + 0.5))
 			putpixel(x, y, GREEN);
 	else 
