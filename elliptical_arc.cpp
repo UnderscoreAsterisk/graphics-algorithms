@@ -7,9 +7,8 @@ using namespace std;
 void drawEllipticalArc(int center_x, int center_y, int x_axis, int y_axis, float start_theta, float end_theta) {
     float theta_inc = PI/180; // one degree
     for (float theta = start_theta; theta <= end_theta; theta += theta_inc) {
-        float r = x_axis * y_axis / sqrt(pow(y_axis*cos(theta), 2) + pow(x_axis*sin(theta), 2));
-        int x = r * cos(theta);
-        int y = r * sin(theta);
+        int x = x_axis * cos(theta);
+        int y = y_axis * sin(theta);
 
         putpixel(center_x + x, center_y + y, WHITE);
     }
