@@ -4,7 +4,7 @@
 #include "graphics.h"
 using namespace std;
 
-void boundary_fill(int seed_x, int seed_y, unsigned int BG_COLOR, unsigned int FILL_COLOR) {
+void flood_fill(int seed_x, int seed_y, unsigned int BG_COLOR, unsigned int FILL_COLOR) {
     stack<pair<int, int>> s;
     s.push(make_pair(seed_x, seed_y));
 
@@ -42,7 +42,7 @@ int main()
     setcolor(GREEN);
     line(100, 200, 300, 200);
 
-    boundary_fill(200, 100, BLACK, CYAN);
+    flood_fill(200, 100, BLACK, CYAN);
 
     getch();
     return 0;
