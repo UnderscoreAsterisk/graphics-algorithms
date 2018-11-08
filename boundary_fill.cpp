@@ -36,10 +36,7 @@ int main()
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "");
     setcolor(WHITE);
-    line(50, 50, 50, 150);
-    line(50, 50, 150, 50);
-    line(150, 50, 150, 150);
-    line(50, 150, 150, 150);
+    rectangle(50, 50, 150, 150);
 
     boundary_fill(75, 75, WHITE, RED);
     
