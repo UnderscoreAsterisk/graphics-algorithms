@@ -11,11 +11,6 @@ int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "");
 
-    /*int triangle_points[] = { 300, 100,
-        250, 200,
-        350, 200,
-        300, 100 };*/
-
     int N;
     int polygon_points[500] = { 0 };
 

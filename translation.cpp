@@ -11,8 +11,6 @@ void translate(int& x, int& y, int tx, int ty) {
 int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "");
-
-    //int x1 = 100, y1 = 100, x2 = 200, y2 = 200;
     
     int N;
     int polygon_points[500] = { 0 };
